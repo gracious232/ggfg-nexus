@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-navy antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  @apply bg-gold/40 text-navy;
+}
