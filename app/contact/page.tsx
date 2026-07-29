@@ -25,21 +25,21 @@ export default function ContactPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Mail size={20} /></div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Email</p>
-                  <p className="mt-2 text-base text-navy/70">hello@ggfg.org</p>
+                  <p className="mt-2 text-base text-navy/70">ggfg.org@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Phone size={20} /></div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Phone</p>
-                  <p className="mt-2 text-base text-navy/70">+233 000 000 000</p>
+                  <p className="mt-2 text-base text-navy/70">+1 629 239 0929</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><MapPin size={20} /></div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Location</p>
-                  <p className="mt-2 text-base text-navy/70">West Africa • Regional headquarters</p>
+                  <p className="mt-2 text-base text-navy/70">Nashville, TN, USA</p>
                 </div>
               </div>
             </div>
@@ -47,6 +47,7 @@ export default function ContactPage() {
 
           <div className="rounded-[2rem] border border-navy/10 bg-white p-8 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Send a note</p>
+            <p className="mt-3 text-sm leading-7 text-navy/70">GGFG is a Registered 501(c)(3) Organization.</p>
             <div className="mt-6 space-y-4">
               <input className="w-full rounded-2xl border border-navy/10 bg-[#F7F8FA] px-4 py-3 text-sm outline-none" placeholder="Name" />
               <input className="w-full rounded-2xl border border-navy/10 bg-[#F7F8FA] px-4 py-3 text-sm outline-none" placeholder="Email" />
