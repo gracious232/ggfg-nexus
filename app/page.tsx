@@ -88,8 +88,9 @@ export default function HomePage() {
                 <Sparkles size={16} /> Building a generation of founders
               </p>
               <h1 className="text-balance text-5xl font-semibold leading-[0.95] tracking-tight text-navy sm:text-6xl lg:text-7xl">
-                We develop entrepreneurs who transform West Africa with discipline, vision, and purpose.
+                We build founders who turn <span className="text-gold">bold ideas</span> into lasting impact across West Africa.
               </h1>
+              <div className="mt-6 h-1.5 w-24 rounded-full bg-gradient-to-r from-gold via-gold/70 to-transparent" />
               <p className="mt-6 max-w-2xl text-lg leading-8 text-navy/70">
                 GGFG is an entrepreneurship platform for building resilient founders, strengthening local economies, and creating enduring institutions across the region.
               </p>
