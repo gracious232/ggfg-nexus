@@ -4,9 +4,18 @@ import { motion } from 'framer-motion';
 import { Compass, Lightbulb, ShieldCheck, TrendingUp } from 'lucide-react';
 
 const pillars = [
-  { title: 'Mission', text: 'To identify, develop, mentor, and support entrepreneurs who launch businesses, create jobs, and strengthen communities.' },
-  { title: 'Vision', text: 'To build a generation of entrepreneurs who transform West Africa through innovation, leadership, and sustainable enterprise.' },
-  { title: 'Leadership Philosophy', text: 'We build founders who lead with discipline, courage, and long-term stewardship.' },
+  {
+    title: 'Mission',
+    text: 'GGFG Nexus exists to build resilient founders who create solutions, strengthen local economies, and launch institutions that endure.',
+  },
+  {
+    title: 'Vision',
+    text: 'A generation of founders, builders, and innovators transforming emerging markets through disciplined entrepreneurship, leadership, and long-term impact.',
+  },
+  {
+    title: 'Leadership Philosophy',
+    text: 'We build founders who lead with discipline, courage, and long-term stewardship.',
+  },
 ];
 
 const values = [
