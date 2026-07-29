@@ -15,6 +15,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(201, 162, 39, 0.06), transparent 35%, rgba(20, 90, 59, 0.05));
+  z-index: 0;
+}
+
 ::selection {
   @apply bg-gold/40 text-navy;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
