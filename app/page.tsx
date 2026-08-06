@@ -104,26 +104,55 @@ export default function HomePage() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="rounded-[2rem] border border-navy/10 bg-navy p-8 text-white shadow-soft">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Flagship Initiative</p>
-                  <h2 className="mt-3 text-3xl font-semibold">EMPOWER 40K</h2>
-                </div>
-                <div className="rounded-full bg-white/10 p-3"><TrendingUp size={24} className="text-gold" /></div>
-              </div>
-              <p className="mt-6 text-base leading-8 text-white/75">
-                A long-term movement designed to develop 40,000 entrepreneurs across West Africa by 2050 through mentorship, venture support, leadership development, and regional network building.
-              </p>
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-2xl font-semibold text-gold">{stat.value}</p>
-                    <p className="mt-2 text-sm text-white/70">{stat.label}</p>
+            <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="grid gap-6 rounded-[2rem] border border-navy/10 bg-white shadow-soft">
+                <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-[2rem] border-b border-navy/10 bg-gradient-to-br from-gold/20 via-white to-navy/5" />
+              <div className="rounded-b-[2rem] bg-navy p-8 text-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Flagship Initiative</p>
+                    <h2 className="mt-3 text-3xl font-semibold">EMPOWER 40K</h2>
                   </div>
-                ))}
+                  <div className="rounded-full bg-white/10 p-3"><TrendingUp size={24} className="text-gold" /></div>
+                </div>
+                <p className="mt-6 text-base leading-8 text-white/75">
+                  A long-term movement designed to develop 40,000 entrepreneurs across West Africa by 2050 through mentorship, venture support, leadership development, and regional network building.
+                </p>
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {stats.map((stat) => (
+                    <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <p className="text-2xl font-semibold text-gold">{stat.value}</p>
+                      <p className="mt-2 text-sm text-white/70">{stat.label}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Moments</p>
+        </div>
+        <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-navy/10 bg-white shadow-sm">
+          <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-50">
+            <div className="absolute left-3 top-3 z-10 rounded-full bg-white/90 p-2">
+              <Sparkles size={16} className="text-gold" />
+            </div>
+            <video
+              className="h-full w-full object-cover"
+              controls
+              playsInline
+              preload="metadata"
+            >
+              <source src="/OUR%20PURPOSE%20.%20.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="p-5 sm:p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Our Purpose</p>
+            <p className="mt-2 text-sm leading-6 text-navy/70">A concise look at the mission and energy behind GGFG.</p>
           </div>
         </div>
       </section>
