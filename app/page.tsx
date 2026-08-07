@@ -1,10 +1,8 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, BarChart3, Compass, Menu, Sparkles, TrendingUp, X } from 'lucide-react';
-import { useState } from 'react';
+import { ArrowRight, BarChart3, Compass, Sparkles, TrendingUp } from 'lucide-react';
 
 const stats = [
   { value: '40K+', label: 'Entrepreneurs envisioned by 2050' },
@@ -35,51 +33,11 @@ const pillars = [
 ];
 
 export default function HomePage() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const navItems = [
-    { href: '/about', label: 'About' },
-    { href: '/empower-40k', label: 'EMPOWER 40K' },
-    { href: '/programs', label: 'Programs' },
-    { href: '/impact', label: 'Impact' },
-    { href: '/contact', label: 'Contact' },
-  ];
-
   return (
     <main className="min-h-screen bg-white text-navy">
       <section className="relative overflow-hidden border-b border-navy/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(201,162,39,0.18),_transparent_35%)]" />
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 lg:px-8 lg:py-28">
-          <nav className="relative z-20 flex items-center justify-between rounded-full border border-navy/10 bg-white/80 px-5 py-3 backdrop-blur">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-navy/10 bg-white">
-                <Image src="/LOGO.png" alt="GGFG logo" width={40} height={40} className="object-contain" />
-              </div>
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-navy">GGFG</p>
-                <p className="text-xs text-navy/60">Grind • Grow • Flourish • Give</p>
-              </div>
-            </Link>
-            <div className="hidden items-center gap-6 text-sm font-medium text-navy/70 md:flex">
-              {navItems.map((item) => (
-                <Link key={item.href} href={item.href} className="transition hover:text-navy">{item.label}</Link>
-              ))}
-            </div>
-            <button className="flex h-10 w-10 items-center justify-center rounded-full border border-navy/10 text-navy md:hidden" onClick={() => setMenuOpen((open) => !open)} aria-label="Toggle navigation">
-              {menuOpen ? <X size={18} /> : <Menu size={18} />}
-            </button>
-          </nav>
-
-          {menuOpen && (
-            <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="rounded-[1.5rem] border border-navy/10 bg-white p-4 shadow-soft md:hidden">
-              {navItems.map((item) => (
-                <Link key={item.href} href={item.href} className="block rounded-2xl px-4 py-3 text-sm font-medium text-navy/80 transition hover:bg-navy/5 hover:text-navy" onClick={() => setMenuOpen(false)}>
-                  {item.label}
-                </Link>
-              ))}
-            </motion.div>
-          )}
-
           <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.25em] text-gold">
