@@ -7,33 +7,33 @@ import { Compass, Lightbulb, ShieldCheck } from 'lucide-react';
 const pillars = [
   {
     title: 'Mission',
-    text: 'GGFG Nexus exists to build resilient founders who create solutions, strengthen local economies, and launch institutions that endure.',
+    text: 'GGFG Nexus exists to build people, strengthen communities, and shape systems that create lasting opportunity and regional resilience.',
     icon: ShieldCheck,
   },
   {
     title: 'Vision',
-    text: 'A generation of founders, builders, and innovators transforming emerging markets through disciplined entrepreneurship, leadership, and long-term impact.',
+    text: 'A generation of capable leaders, builders, and institutions transforming emerging markets through human development, community strength, and long-term impact.',
     icon: Compass,
   },
   {
     title: 'Leadership Philosophy',
-    text: 'We build founders who lead with discipline, courage, and long-term stewardship.',
+    text: 'We develop leaders who act with discipline, courage, and generational stewardship.',
     icon: Lightbulb,
   },
 ];
 
 const values = [
   {
-    title: 'Why Entrepreneurship',
-    text: 'Entrepreneurship is one of the most powerful engines for job creation, resilience, and local prosperity.',
+    title: 'Why Human Development',
+    text: 'Building people is the foundation of long-term resilience, opportunity, and community prosperity.',
   },
   {
     title: 'Why West Africa',
-    text: 'The region holds extraordinary energy, talent, and opportunity, and requires bold institutional support.',
+    text: 'The region holds extraordinary energy, talent, and potential — requiring bold, structured systems that unlock opportunity at scale.',
   },
   {
     title: 'Our Approach',
-    text: 'We combine mentorship, network-building, leadership cultivation, and venture support into a coherent founder journey.',
+    text: 'We combine capability development, leadership cultivation, ecosystem-building, and opportunity systems into a coherent pathway for regional transformation.',
   },
 ];
 
@@ -46,8 +46,8 @@ export default function AboutPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">About GGFG</p>
             <div className="mt-10 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div className="space-y-6">
-                <h1 className="text-4xl font-semibold leading-tight text-navy sm:text-5xl">A modern entrepreneurship network designed to grow founders, institutions, and regional resilience.</h1>
-                <p className="max-w-3xl text-lg leading-8 text-navy/75">We develop disciplined founders through mentorship, systems-based support, and leadership training that creates lasting economic strength across West Africa.</p>
+                <h1 className="text-4xl font-semibold leading-tight text-navy sm:text-5xl">A global movement designing platforms, pathways, and systems that strengthen people, communities, and long-term regional resilience.</h1>
+                <p className="max-w-3xl text-lg leading-8 text-navy/75">We build capability, leadership, and opportunity systems that empower individuals and institutions across West Africa and beyond.</p>
               </div>
 
               <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-white shadow-soft">
@@ -56,8 +56,8 @@ export default function AboutPage() {
                   </div>
                 <div className="border-t border-navy/10 bg-navy p-8 text-white">
                   <p className="text-xs font-semibold uppercase tracking-[0.35em] text-gold">Focused support</p>
-                  <h2 className="mt-4 text-2xl font-semibold">We move founders from ambition to institution-building with practical, high-touch support.</h2>
-                  <p className="mt-4 text-sm leading-7 text-white/75">From strategy and execution to leadership and community impact, GGFG builds the structure that helps ventures thrive beyond launch.</p>
+                  <h2 className="mt-4 text-2xl font-semibold">We help people and communities grow with structured, high-touch support.</h2>
+                  <p className="mt-4 text-sm leading-7 text-white/75">From capability development and leadership formation to ecosystem building and opportunity access, GGFG creates the systems that enable long-term flourishing.</p>
                 </div>
               </div>
             </div>
@@ -90,15 +90,15 @@ export default function AboutPage() {
             </div>
             <div className="p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Mission in action</p>
-              <h3 className="mt-4 text-3xl font-semibold text-navy">Supporting founders through every stage of enterprise development.</h3>
-              <p className="mt-5 text-base leading-8 text-navy/75">This image represents the intentional coaching, collaboration, and systems-building that power our founder journeys.</p>
+              <h3 className="mt-4 text-3xl font-semibold text-navy">Strengthening people, communities, and systems through intentional coaching, collaboration, and ecosystem-building.</h3>
+              <p className="mt-5 text-base leading-8 text-navy/75">This image represents the capability development, leadership formation, and systems support that power our work.</p>
             </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.16 }} className="rounded-[2rem] border border-navy/10 bg-navy p-10 text-white shadow-soft">
             <div className="inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-gold">Approach</div>
-            <h3 className="mt-6 text-3xl font-semibold text-white sm:text-4xl">We design a founder journey that balances growth, governance, and community momentum.</h3>
-            <p className="mt-5 text-base leading-8 text-white/75">GGFG bridges entrepreneur development with systems-strengthening, so each venture can scale responsibly while generating wider impact.</p>
+            <h3 className="mt-6 text-3xl font-semibold text-white sm:text-4xl">We design pathways that balance growth, governance, and community momentum.</h3>
+            <p className="mt-5 text-base leading-8 text-white/75">GGFG bridges human development with systems-strengthening so individuals and institutions can grow responsibly while generating wider regional impact.</p>
             <div className="mt-8 space-y-4">
               {values.map((value, index) => (
                 <div key={value.title} className="rounded-[1.75rem] border border-white/10 bg-white/5 p-5">
@@ -127,17 +127,17 @@ export default function AboutPage() {
               </div>
               <div className="p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Regional impact</p>
-                <h3 className="mt-4 text-3xl font-semibold text-navy">A network designed for sustained, measurable local outcomes.</h3>
-                <p className="mt-4 text-base leading-7 text-navy/75">We support founders as they build businesses that create jobs, strengthen institutions, and unlock community value.</p>
+                <h3 className="mt-4 text-3xl font-semibold text-navy">A movement designed for sustained, measurable regional outcomes.</h3>
+                <p className="mt-4 text-base leading-7 text-navy/75">We strengthen people and institutions that create jobs, build resilience, and unlock community value.</p>
               </div>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.24 }} className="rounded-[2rem] border border-navy/10 bg-navy p-10 text-white shadow-soft">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What sets us apart</p>
               <ul className="mt-6 space-y-4 text-sm leading-7 text-white/80">
-                <li>Structured founder support with a regional ecosystem mindset.</li>
-                <li>Leadership development that safeguards long-term growth.</li>
-                <li>Practical systems and networks that accelerate local scale.</li>
+                <li>Systems-focused support with a regional development mindset.</li>
+                <li>Leadership formation that safeguards long-term growth.</li>
+                <li>Practical platforms and networks that accelerate capability, opportunity, and community strength.</li>
               </ul>
             </motion.div>
           </div>
