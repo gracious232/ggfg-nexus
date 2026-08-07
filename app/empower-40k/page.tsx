@@ -16,7 +16,38 @@ const pillars = [
   'Annual Summit',
 ];
 
-const journey = ['Discover', 'Develop', 'Build', 'Launch', 'Grow', 'Give Back'];
+const journey = [
+  {
+    title: 'Discover',
+    description: 'Identify young people with entrepreneurial potential.',
+    quote: 'Great entrepreneurs exist everywhere. We help find them.',
+  },
+  {
+    title: 'Develop',
+    description: 'Equip entrepreneurs with the skills, mindset, and leadership to build successful ventures.',
+    quote: 'Knowledge creates confidence.',
+  },
+  {
+    title: 'Mentor',
+    description: 'Provide experienced mentors who guide entrepreneurs through every stage of their journey.',
+    quote: 'No entrepreneur succeeds alone.',
+  },
+  {
+    title: 'Connect',
+    description: 'Open doors to networks, partnerships, markets, and opportunities.',
+    quote: 'Relationships accelerate success.',
+  },
+  {
+    title: 'Invest',
+    description: 'Prepare entrepreneurs for funding and connect them with grants, investors, and financial opportunities.',
+    quote: 'Capital helps good ideas grow.',
+  },
+  {
+    title: 'Multiply',
+    description: 'Support entrepreneurs as they scale their businesses, create jobs, and mentor the next generation.',
+    quote: 'Success creates more success.',
+  },
+];
 
 const timeline = [
   { year: '2026–2030', title: 'Founding and regional activation', text: 'Establish regional convening, founder selection, and high-impact pilot programs.' },
@@ -66,11 +97,13 @@ export default function EmpowerPage() {
       <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
         <div className="rounded-[2rem] border border-navy/10 bg-white p-8 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Founder Journey</p>
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-6">
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {journey.map((step, index) => (
-              <div key={step} className="rounded-[1.25rem] border border-navy/10 bg-[#F7F8FA] p-5">
+              <div key={step.title} className="rounded-[1.25rem] border border-navy/10 bg-[#F7F8FA] p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
-                <h3 className="mt-3 text-lg font-semibold text-navy">{step}</h3>
+                <h3 className="mt-3 text-lg font-semibold text-navy">{step.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-navy/70">{step.description}</p>
+                <p className="mt-4 text-sm font-medium italic text-gold">“{step.quote}”</p>
               </div>
             ))}
           </div>
