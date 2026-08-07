@@ -27,13 +27,11 @@ const values = [
   },
 ];
 
-const steps = [
-  { title: 'Discover', text: 'We identify emerging founders with strong potential and a clear mission.' },
-  { title: 'Develop', text: 'We sharpen leadership, business model, and strategic capacity.' },
-  { title: 'Build', text: 'We support venture formation, systems, networks, and early traction.' },
-  { title: 'Launch', text: 'We help founders enter markets with credibility and momentum.' },
-  { title: 'Grow', text: 'We deepen access to capital, partnerships, and scale.' },
-  { title: 'Give Back', text: 'We create a culture of stewardship and community reinvestment.' },
+const pillars = [
+  { title: 'Capability Platforms', text: 'Scalable systems that build skills, confidence, and growth.' },
+  { title: 'Leadership Pathways', text: 'Structured journeys that develop visionary leaders.' },
+  { title: 'Community Ecosystems', text: 'Environments and networks that enable people to flourish.' },
+  { title: 'Opportunity Systems', text: 'Infrastructure that expands long-term social and economic mobility.' },
 ];
 
 export default function HomePage() {
@@ -85,14 +83,17 @@ export default function HomePage() {
           <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.25em] text-gold">
-                <Sparkles size={16} /> Building a generation of founders
+                <Sparkles size={16} /> Building platforms, pathways, and systems
               </p>
               <h1 className="text-balance text-5xl font-semibold leading-[0.95] tracking-tight text-navy sm:text-6xl lg:text-7xl">
-                We build founders who turn <span className="text-gold">bold ideas</span> into lasting impact across West Africa.
+                We build platforms, pathways, and systems that empower people to shape their future and create lasting impact.
               </h1>
               <div className="mt-6 h-1.5 w-24 rounded-full bg-gradient-to-r from-gold via-gold/70 to-transparent" />
               <p className="mt-6 max-w-2xl text-lg leading-8 text-navy/70">
-                GGFG is an entrepreneurship platform for building resilient founders, strengthening local economies, and creating enduring institutions across the region.
+                GGFG operates through capability platforms, leadership pathways, community ecosystems, and opportunity systems that help individuals and communities grow, lead, and flourish.
+              </p>
+              <p className="mt-4 max-w-2xl text-lg leading-8 text-navy/70">
+                GGFG is a global movement designing the platforms and systems that unlock human potential. Through capability development, leadership formation, community ecosystem building, and long-term opportunity systems, we empower people to transform their lives and shape the future.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/empower-40k" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-navy/90">
@@ -105,7 +106,14 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="grid gap-6 rounded-[2rem] border border-navy/10 bg-white shadow-soft">
-                <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-[2rem] border-b border-navy/10 bg-gradient-to-br from-gold/20 via-white to-navy/5" />
+                <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-[2rem] border-b border-navy/10 bg-slate-50">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(201,162,39,0.2),_transparent_45%)]" />
+                  <div className="absolute bottom-6 left-6 max-w-sm rounded-[1.5rem] border border-white/70 bg-white/80 p-5 backdrop-blur">
+                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Flagship Initiative</p>
+                    <p className="mt-2 text-lg font-semibold text-navy">EMPOWER 40K</p>
+                    <p className="mt-2 text-sm leading-7 text-navy/70">A long-term movement designed to build practical entrepreneurship capacity across West Africa.</p>
+                  </div>
+                </div>
               <div className="rounded-b-[2rem] bg-navy p-8 text-white">
                 <div className="flex items-center justify-between">
                   <div>
@@ -181,25 +189,43 @@ export default function HomePage() {
         <div className="rounded-[2.5rem] border border-navy/10 bg-[#F7F8FA] p-8 lg:p-12">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">How GGFG works</p>
-              <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">We do not simply train entrepreneurs. We build founders for durable impact.</h3>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">How GGFG Works</p>
+              <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">GGFG creates impact through four core pillars:</h3>
             </div>
             <Link href="/programs" className="inline-flex items-center gap-2 text-sm font-semibold text-navy transition hover:text-gold">
               View programs <ArrowRight size={16} />
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {steps.map((step, index) => (
-              <motion.div key={step.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.45, delay: index * 0.05 }} className="rounded-[1.5rem] border border-navy/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {pillars.map((pillar, index) => (
+              <motion.div key={pillar.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.45, delay: index * 0.05 }} className="rounded-[1.5rem] border border-navy/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
                   <BarChart3 size={18} className="text-navy/40" />
                 </div>
-                <h4 className="mt-5 text-xl font-semibold text-navy">{step.title}</h4>
-                <p className="mt-3 text-sm leading-7 text-navy/70">{step.text}</p>
+                <h4 className="mt-5 text-xl font-semibold text-navy">{pillar.title}</h4>
+                <p className="mt-3 text-sm leading-7 text-navy/70">{pillar.text}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+        <div className="rounded-[2.5rem] border border-navy/10 bg-white p-8 shadow-sm lg:p-12">
+          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Explore Our Work</p>
+              <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Our initiatives strengthen people, communities, and systems across regions.</h3>
+            </div>
+            <div className="rounded-[2rem] border border-navy/10 bg-[#F7F8FA] p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Empower 40K</p>
+              <p className="mt-4 text-lg leading-8 text-navy/70">Empower 40K is our entrepreneurship and founder-building platform focused on West Africa.</p>
+              <Link href="/empower-40k" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy transition hover:text-gold">
+                Learn more <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
