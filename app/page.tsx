@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-navy">
       <section className="relative overflow-hidden border-b border-navy/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(201,162,39,0.18),_transparent_35%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(201,162,39,0.18),_transparent_35%)]" />
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-6 py-20 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
@@ -65,7 +65,7 @@ export default function HomePage() {
 
             <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="grid gap-6 rounded-[2rem] border border-navy/10 bg-white shadow-soft">
                 <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-[2rem] border-b border-navy/10 bg-slate-50">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(201,162,39,0.2),_transparent_45%)]" />
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(201,162,39,0.2),_transparent_45%)]" />
                   <div className="absolute bottom-6 left-6 max-w-sm rounded-[1.5rem] border border-white/70 bg-white/80 p-5 backdrop-blur">
                     <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Flagship Initiative</p>
                     <p className="mt-2 text-lg font-semibold text-navy">EMPOWER 40K</p>
