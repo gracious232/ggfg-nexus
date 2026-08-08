@@ -98,6 +98,34 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div className="rounded-[2.5rem] border border-navy/10 bg-[linear-gradient(120deg,_rgba(201,162,39,0.12),_rgba(6,26,45,0.03))] p-8 shadow-sm lg:p-10">
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Now on the main site</p>
+              <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Empower Lab brings practical learning, assessments, and certificates into one clear experience.</h3>
+              <p className="mt-4 text-lg leading-8 text-navy/70">Visitors can now explore the learning modules, take the assessment, and view the certificate journey directly from GGFG’s public site.</p>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy/90">
+                  Explore Empower Lab <ArrowRight size={16} />
+                </Link>
+                <Link href="/empower-lab-assessment" className="inline-flex items-center gap-2 rounded-full border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40">
+                  Start the assessment
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-[2rem] border border-navy/10 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What’s inside</p>
+              <ul className="mt-5 space-y-3 text-sm leading-7 text-navy/75">
+                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>Five focused learning modules built around practical entrepreneurship content.</span></li>
+                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>A structured assessment experience for learners and facilitators.</span></li>
+                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>Certificate viewing and verification pathways for completed learners.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Moments</p>
         </div>
@@ -194,6 +222,7 @@ export default function HomePage() {
           <div className="flex gap-5">
             <Link href="/about" className="transition hover:text-navy">About</Link>
             <Link href="/impact" className="transition hover:text-navy">Impact</Link>
+            <Link href="/empower-lab" className="transition hover:text-navy">Empower Lab</Link>
             <Link href="/contact" className="transition hover:text-navy">Contact</Link>
           </div>
         </div>

@@ -13,7 +13,20 @@ const navItems = [
   { href: '/programs', label: 'Programs' },
   { href: '/impact', label: 'Impact' },
   { href: '/contact', label: 'Contact' },
+  { href: '/empower-lab', label: 'Empower Lab' },
+  { href: '/empower-lab-assessment', label: 'Assessment' },
+  { href: '/empower-lab/certificate', label: 'Certificate' },
+  { href: '/empower-lab/verify', label: 'Verify Certificate' },
+  { href: '/empower-lab/admin', label: 'Admin' },
 ];
+
+function isLinkActive(pathname: string, href: string) {
+  if (href === '/empower-lab') {
+    return pathname === href || pathname.startsWith('/empower-lab/');
+  }
+
+  return pathname === href;
+}
 
 export default function SiteNav() {
   const pathname = usePathname();
@@ -36,9 +49,9 @@ export default function SiteNav() {
           </div>
         </Link>
 
-        <div className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <div className="hidden flex-wrap items-center justify-end gap-3 text-sm font-medium md:flex lg:gap-4">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = isLinkActive(pathname, item.href);
             return (
               <Link
                 key={item.href}
@@ -72,7 +85,7 @@ export default function SiteNav() {
             className="border-t border-navy/10 bg-white px-6 py-3 md:hidden"
           >
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = isLinkActive(pathname, item.href);
               return (
                 <Link
                   key={item.href}
