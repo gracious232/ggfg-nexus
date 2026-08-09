@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { BookOpen, ClipboardCheck, GraduationCap, Home, ShieldCheck, Sparkles } from 'lucide-react';
+import { BookOpen, Home, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Empower Lab | GGFG Nexus',
@@ -10,9 +10,6 @@ export const metadata: Metadata = {
 const sectionLinks = [
   { href: '/empower-lab', label: 'Home', icon: Home },
   { href: '/empower-lab/module-1', label: 'Modules', icon: BookOpen },
-  { href: '/empower-lab/assessment', label: 'Assessment', icon: ClipboardCheck },
-  { href: '/empower-lab/certificate', label: 'Certificate', icon: GraduationCap },
-  { href: '/empower-lab/verify', label: 'Verify Certificate', icon: ShieldCheck },
 ];
 
 export default function EmpowerLabLayout({ children }: { children: React.ReactNode }) {

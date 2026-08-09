@@ -90,8 +90,8 @@ export function ModuleShell({ module, previous, next }: ModuleShellProps) {
                 Next Module <ArrowRight size={16} />
               </Link>
             ) : (
-              <Link href="/empower-lab/assessment" className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-navy transition hover:bg-gold/90">
-                Take the Assessment <ArrowRight size={16} />
+              <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-navy transition hover:bg-gold/90">
+                Return to Empower Lab <ArrowRight size={16} />
               </Link>
             )}
           </div>

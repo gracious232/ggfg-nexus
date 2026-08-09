@@ -14,10 +14,6 @@ const navItems = [
   { href: '/impact', label: 'Impact' },
   { href: '/contact', label: 'Contact' },
   { href: '/empower-lab', label: 'Empower Lab' },
-  { href: '/empower-lab-assessment', label: 'Assessment' },
-  { href: '/empower-lab/certificate', label: 'Certificate' },
-  { href: '/empower-lab/verify', label: 'Verify Certificate' },
-  { href: '/empower-lab/admin', label: 'Admin' },
 ];
 
 function isLinkActive(pathname: string, href: string) {

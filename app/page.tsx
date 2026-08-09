@@ -108,17 +108,14 @@ export default function HomePage() {
                 <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy/90">
                   Explore Empower Lab <ArrowRight size={16} />
                 </Link>
-                <Link href="/empower-lab-assessment" className="inline-flex items-center gap-2 rounded-full border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40">
-                  Start the assessment
-                </Link>
               </div>
             </div>
             <div className="rounded-[2rem] border border-navy/10 bg-white p-6 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What’s inside</p>
               <ul className="mt-5 space-y-3 text-sm leading-7 text-navy/75">
                 <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>Five focused learning modules built around practical entrepreneurship content.</span></li>
-                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>A structured assessment experience for learners and facilitators.</span></li>
-                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>Certificate viewing and verification pathways for completed learners.</span></li>
+                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>PDF learning materials that are easy to open and download.</span></li>
+                <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>A calm learning experience with practical next-step guidance.</span></li>
               </ul>
             </div>
           </div>

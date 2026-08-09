@@ -20,8 +20,8 @@ export default function EmpowerLabHomePage() {
               <Link href="/empower-lab/module-1" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy/90">
                 Begin Module 1 <ArrowRight size={16} />
               </Link>
-              <Link href="/empower-lab/assessment" className="inline-flex items-center gap-2 rounded-full border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40">
-                Take the Assessment
+              <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40">
+                Browse All Modules
               </Link>
             </div>
           </div>
