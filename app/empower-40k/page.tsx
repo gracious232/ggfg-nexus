@@ -159,9 +159,19 @@ export default function EmpowerPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Join the movement</p>
             <h2 className="mt-3 text-3xl font-semibold text-navy">Support a generation of founders building durable prosperity across West Africa.</h2>
           </div>
-          <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5">
-            Become a partner <ArrowRight size={16} />
-          </Link>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href="https://claude.ai/public/artifacts/fb4306b1-c092-4754-bfea-9b967e8256a1"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+            >
+              View Empower Lab Assessment <ArrowRight size={16} />
+            </a>
+            <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full border border-navy bg-white px-6 py-3 text-sm font-semibold text-navy transition hover:-translate-y-0.5">
+              Become a partner <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
     </main>
