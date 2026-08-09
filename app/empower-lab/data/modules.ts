@@ -9,6 +9,23 @@ export type ModuleContent = {
   summary: string;
 };
 
+const modulePdf = (number: number) => {
+  switch (number) {
+    case 1:
+      return '/EMPOWER Lab Module 1 The Entrepreneur.pdf';
+    case 2:
+      return '/EMPOWER Lab Module 2 Finding Problems.pdf';
+    case 3:
+      return '/EMPOWER Lab Module 3Validate.pdf';
+    case 4:
+      return '/EMPOWER Lab Module 4 UNDERSTANDING.pdf';
+    case 5:
+      return '/EMPOWER Lab Module 5 MONEY.pdf';
+    default:
+      return `/EMPOWER Lab Module ${number}.pdf`;
+  }
+};
+
 export const empowerLabModules: ModuleContent[] = [
   {
     id: 'module-1',
@@ -17,7 +34,7 @@ export const empowerLabModules: ModuleContent[] = [
     title: 'The Entrepreneur Within You',
     intro:
       'Use the guided learning PDF below to study the module at your own pace.',
-    pdf: '/EMPOWER Lab Module 1.pdf',
+    pdf: modulePdf(1),
     outcomes: [
       'Understand entrepreneurship in practical terms.',
       'Recognize the mindset of an entrepreneur.',
@@ -33,7 +50,7 @@ export const empowerLabModules: ModuleContent[] = [
     title: 'Finding Problems & Opportunities',
     intro:
       'Open the module PDF to explore how opportunity is discovered through observation and reflection.',
-    pdf: '/EMPOWER Lab Module 2.pdf',
+    pdf: modulePdf(2),
     outcomes: [
       'Identify recurring problems in your environment.',
       'Recognize what makes a problem worth solving.',
@@ -49,7 +66,7 @@ export const empowerLabModules: ModuleContent[] = [
     title: 'From Idea to Business',
     intro:
       'Review the PDF to understand how ideas become offers, products, and growing ventures.',
-    pdf: '/EMPOWER LabModule 3.pdf',
+    pdf: modulePdf(3),
     outcomes: [
       'Understand how ideas become business opportunities.',
       'Learn the role of customers and value propositions.',
@@ -65,7 +82,7 @@ export const empowerLabModules: ModuleContent[] = [
     title: 'Understanding Your Customer',
     intro:
       'Use the PDF to learn about customer needs, interviews, feedback, and value creation.',
-    pdf: '/EMPOWER Lab Module 4.pdf',
+    pdf: modulePdf(4),
     outcomes: [
       'Understand who your customer is.',
       'Learn how to identify pain points.',
@@ -81,7 +98,7 @@ export const empowerLabModules: ModuleContent[] = [
     title: 'Money & Financial Foundations',
     intro:
       'Open the module PDF to explore revenue, costs, profit, cash flow, pricing, budgeting, and funding.',
-    pdf: '/EMPOWER Lab  Module 5.pdf',
+    pdf: modulePdf(5),
     outcomes: [
       'Explain the basics of money in business.',
       'Understand pricing, budgeting, and cash flow.',
