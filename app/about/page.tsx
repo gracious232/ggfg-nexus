@@ -122,7 +122,7 @@ export default function AboutPage() {
           <div className="grid gap-6">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.16 }} className="overflow-hidden rounded-[2rem] border border-navy/10 bg-navy/10 shadow-soft">
               <div className="relative h-36 md:h-44 overflow-hidden bg-slate-50">
-                <Image src="/about-04.webp" alt="Regional impact in action" fill className="object-contain object-center" />
+                <Image src="/about-04.webp" alt="" fill className="object-contain object-center" />
               </div>
               <div className="p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Regional impact</p>
