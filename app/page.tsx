@@ -131,10 +131,15 @@ export default function HomePage() {
             <div className="absolute left-3 top-3 z-10 rounded-full bg-navy/80 p-2">
               <Sparkles size={16} className="text-gold" />
             </div>
-            <img
-              src="/hero-photo.jpg"
-              alt="People collaborating in a GGFG program"
+            <video
+              src="/our-purpose.mp4"
               className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              poster="/hero-photo.jpg"
             />
           </div>
           <div className="p-5 sm:p-6">
