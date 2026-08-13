@@ -57,7 +57,7 @@ const timeline = [
 
 export default function EmpowerPage() {
   return (
-    <main className="min-h-screen bg-navy/5 text-white">
+    <main className="min-h-screen bg-navy/5 text-navy">
       <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(2,15,26,0.95),_rgba(3,20,33,1))] text-white">
         <div className="mx-auto max-w-6xl px-6 py-18 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -72,9 +72,9 @@ export default function EmpowerPage() {
         <div className="rounded-[2rem] border border-navy/10 bg-navy/10 p-8 shadow-sm lg:p-12">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">A Future Worth Building</p>
           <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight text-gold sm:text-4xl">Imagine 50,000 young entrepreneurs across West Africa launching real businesses over the next generation.</h2>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-white/80">If, over time, each entrepreneur were able to create opportunities for just 10 other people, the ripple effect could exceed <span className="font-semibold text-white">500,000 jobs</span> across the region.</p>
-          <p className="mt-5 text-lg leading-8 text-white/80">That is the scale of possibility behind <span className="font-semibold text-white">Empower 50K</span>.</p>
-          <p className="mt-8 max-w-4xl text-base leading-8 text-white/80">GGFG Nexus exists to make that future more achievable by developing entrepreneurs with the mindset, leadership, networks, mentorship, and ecosystem support they need to build sustainable ventures. While no outcome can be guaranteed, the potential is extraordinary. Every successful founder has the capacity to create opportunities far beyond their own business, strengthening families, communities, and local economies.</p>
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-navy/80">If, over time, each entrepreneur were able to create opportunities for just 10 other people, the ripple effect could exceed <span className="font-semibold text-navy">500,000 jobs</span> across the region.</p>
+          <p className="mt-5 text-lg leading-8 text-navy/80">That is the scale of possibility behind <span className="font-semibold text-navy">Empower 50K</span>.</p>
+          <p className="mt-8 max-w-4xl text-base leading-8 text-navy/80">GGFG Nexus exists to make that future more achievable by developing entrepreneurs with the mindset, leadership, networks, mentorship, and ecosystem support they need to build sustainable ventures. While no outcome can be guaranteed, the potential is extraordinary. Every successful founder has the capacity to create opportunities far beyond their own business, strengthening families, communities, and local economies.</p>
           <p className="mt-8 max-w-3xl text-xl font-semibold leading-8 text-gold">Real transformation begins with one entrepreneur. Multiplied by 50,000, it has the potential to reshape the future of West Africa.</p>
         </div>
       </section>
@@ -84,7 +84,7 @@ export default function EmpowerPage() {
           <div className="rounded-[2rem] border border-navy/10 bg-navy/10 p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">The Challenge</p>
             <h2 className="mt-3 text-3xl font-semibold text-gold">Too many promising founders are left without the systems, networks, and leadership support needed to scale.</h2>
-            <p className="mt-5 text-base leading-8 text-white/80">The next generation of businesses will not emerge from ideal conditions alone. They will emerge from disciplined development, strategic support, and long-term commitment.</p>
+            <p className="mt-5 text-base leading-8 text-navy/80">The next generation of businesses will not emerge from ideal conditions alone. They will emerge from disciplined development, strategic support, and long-term commitment.</p>
           </div>
           <div className="rounded-[2rem] border border-navy/10 bg-navy p-8 text-white">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Why Empower 50K</p>
@@ -102,7 +102,7 @@ export default function EmpowerPage() {
               <div key={step.title} className="rounded-[1.25rem] border border-navy/10 bg-navy/10 p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
                 <h3 className="mt-3 text-lg font-semibold text-gold">{step.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-white/80">{step.description}</p>
+                <p className="mt-3 text-sm leading-7 text-navy/80">{step.description}</p>
                 <p className="mt-4 text-sm font-medium italic text-gold">“{step.quote}”</p>
               </div>
             ))}
@@ -116,7 +116,7 @@ export default function EmpowerPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Program Pillars</p>
             <div className="mt-6 flex flex-wrap gap-3">
               {pillars.map((pillar) => (
-                <span key={pillar} className="rounded-full border border-navy/10 bg-navy/10 px-4 py-2 text-sm font-medium text-white/80">{pillar}</span>
+                <span key={pillar} className="rounded-full border border-navy/10 bg-navy/10 px-4 py-2 text-sm font-medium text-navy/80">{pillar}</span>
               ))}
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function EmpowerPage() {
               ].map(([title, body]) => (
                 <div key={title} className="rounded-[1.25rem] border border-navy/10 bg-navy/10 p-5">
                   <h3 className="text-lg font-semibold text-gold">{title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-white/80">{body}</p>
+                  <p className="mt-2 text-sm leading-7 text-navy/80">{body}</p>
                 </div>
               ))}
             </div>

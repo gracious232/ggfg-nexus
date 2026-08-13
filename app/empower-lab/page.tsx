@@ -67,7 +67,7 @@ export default function EmpowerLabHomePage() {
             <div className="rounded-2xl border border-gold/20 bg-gold/10 px-4 py-3">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Progress</p>
               <p className="mt-1 text-lg font-semibold text-navy">Module 1 of 5</p>
-              <p className="text-sm text-white/90">20% complete</p>
+              <p className="text-sm text-navy/80">20% complete</p>
             </div>
           </div>
 
@@ -99,15 +99,15 @@ export default function EmpowerLabHomePage() {
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Learn</p>
-            <p className="mt-3 text-lg leading-8 text-white/85">Move from ideas to practical understanding through structured, calm learning.</p>
+            <p className="mt-3 text-lg leading-8 text-navy/85">Move from ideas to practical understanding through structured, calm learning.</p>
           </div>
           <div className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Think</p>
-            <p className="mt-3 text-lg leading-8 text-white/85">Develop a sharper eye for problems, opportunities, customers, and business value.</p>
+            <p className="mt-3 text-lg leading-8 text-navy/85">Develop a sharper eye for problems, opportunities, customers, and business value.</p>
           </div>
           <div className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Build & Grow</p>
-            <p className="mt-3 text-lg leading-8 text-white/85">Translate learning into action, then continue strengthening your foundation with confidence.</p>
+            <p className="mt-3 text-lg leading-8 text-navy/85">Translate learning into action, then continue strengthening your foundation with confidence.</p>
           </div>
         </div>
       </section>

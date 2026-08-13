@@ -35,7 +35,7 @@ export default function EmpowerLabLayout({ children }: { children: React.ReactNo
           {sectionLinks.map((item) => {
             const Icon = item.icon;
             return (
-              <Link key={item.href} href={item.href} className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-navy/5 px-4 py-2 text-sm font-medium text-white/85 transition hover:border-gold/30 hover:text-gold">
+              <Link key={item.href} href={item.href} className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-navy/5 px-4 py-2 text-sm font-medium text-navy/85 transition hover:border-gold/30 hover:text-gold">
                 <Icon size={16} /> {item.label}
               </Link>
             );

@@ -34,7 +34,7 @@ const pillars = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-navy/10 text-white">
+    <main className="min-h-screen bg-navy/10 text-navy">
       <section className="relative overflow-hidden border-b border-midnight/20 bg-midnight text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(210,175,46,0.18),_transparent_35%)]" />
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-6 py-16 lg:px-8 lg:py-24">
@@ -103,7 +103,7 @@ export default function HomePage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Now on the main site</p>
               <h3 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">Empower Lab brings practical learning, assessments, and certificates into one clear experience.</h3>
-              <p className="mt-4 text-lg leading-8 text-white/90">Visitors can now explore the learning modules, take the assessment, and view the certificate journey directly from GGFG’s public site.</p>
+              <p className="mt-4 text-lg leading-8 text-navy/90">Visitors can now explore the learning modules, take the assessment, and view the certificate journey directly from GGFG’s public site.</p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-white transition hover:bg-gold/90">
                   Explore Empower Lab <ArrowRight size={16} />
@@ -112,7 +112,7 @@ export default function HomePage() {
             </div>
             <div className="rounded-[2rem] border border-navy/10 bg-navy/15 p-6">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What’s inside</p>
-              <ul className="mt-5 space-y-3 text-sm leading-7 text-white/85">
+              <ul className="mt-5 space-y-3 text-sm leading-7 text-navy/85">
                 <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>Five focused learning modules built around practical entrepreneurship content.</span></li>
                 <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>PDF learning materials that are easy to open and download.</span></li>
                 <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>A calm learning experience with practical next-step guidance.</span></li>
@@ -144,7 +144,7 @@ export default function HomePage() {
           </div>
           <div className="p-5 sm:p-6">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Our Purpose</p>
-            <p className="mt-2 text-sm leading-6 text-white/80">A concise look at the mission and energy behind GGFG.</p>
+            <p className="mt-2 text-sm leading-6 text-navy/80">A concise look at the mission and energy behind GGFG.</p>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function HomePage() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Core Values</p>
-            <h3 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">We create a standard of excellence that founders can inherit.</h3>
+            <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">We create a standard of excellence that founders can inherit.</h3>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {values.map((value) => (
@@ -161,8 +161,8 @@ export default function HomePage() {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
                   <Compass size={20} />
                 </div>
-                <h4 className="text-xl font-semibold text-white">{value.title}</h4>
-                <p className="mt-3 text-sm leading-7 text-white/80">{value.text}</p>
+                <h4 className="text-xl font-semibold text-navy">{value.title}</h4>
+                <p className="mt-3 text-sm leading-7 text-navy/80">{value.text}</p>
               </motion.div>
             ))}
           </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">How GGFG Works</p>
               <h3 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">GGFG creates impact through four core pillars:</h3>
             </div>
-            <Link href="/programs" className="inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-white">
+            <Link href="/programs" className="inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-navy">
               View programs <ArrowRight size={16} />
             </Link>
           </div>
@@ -188,8 +188,8 @@ export default function HomePage() {
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
                   <BarChart3 size={18} className="text-gold/70" />
                 </div>
-                <h4 className="mt-5 text-xl font-semibold text-white">{pillar.title}</h4>
-                <p className="mt-3 text-sm leading-7 text-white/85">{pillar.text}</p>
+                <h4 className="mt-5 text-xl font-semibold text-navy">{pillar.title}</h4>
+                <p className="mt-3 text-sm leading-7 text-navy/85">{pillar.text}</p>
               </motion.div>
             ))}
           </div>
@@ -205,8 +205,8 @@ export default function HomePage() {
             </div>
             <div className="rounded-[2rem] border border-navy/10 bg-navy/10 p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Empower 50K</p>
-              <p className="mt-4 text-lg leading-8 text-white/80">Empower 50K is our entrepreneurship and founder-building platform focused on West Africa.</p>
-              <Link href="/empower-50k" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-white">
+              <p className="mt-4 text-lg leading-8 text-navy/80">Empower 50K is our entrepreneurship and founder-building platform focused on West Africa.</p>
+              <Link href="/empower-50k" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-navy">
                 Learn more <ArrowRight size={16} />
               </Link>
             </div>
