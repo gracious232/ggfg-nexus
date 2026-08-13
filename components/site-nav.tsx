@@ -8,8 +8,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/empower-40k', label: 'EMPOWER 40K' },
+  { href: '/empower-50k', label: 'Empower 50K' },
   { href: '/programs', label: 'Programs' },
   { href: '/impact', label: 'Impact' },
   { href: '/contact', label: 'Contact' },
@@ -33,15 +34,15 @@ export default function SiteNav() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy/10 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-midnight/20 bg-midnight/95 text-white backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-navy/10 bg-white">
             <Image src="/LOGO.png" alt="GGFG logo" width={40} height={40} className="object-contain" />
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-navy">GGFG</p>
-            <p className="text-xs text-navy/60">Grind • Grow • Flourish • Give</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-white">GGFG</p>
+            <p className="text-xs text-white/60">Grind • Grow • Flourish • Give</p>
           </div>
         </Link>
 
@@ -52,7 +53,7 @@ export default function SiteNav() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`transition ${isActive ? 'font-semibold text-gold' : 'text-navy/70 hover:text-navy'}`}
+                className={`transition ${isActive ? 'font-semibold text-gold' : 'text-white/75 hover:text-white'}`}
               >
                 {item.label}
               </Link>
@@ -62,7 +63,7 @@ export default function SiteNav() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-navy/10 text-navy md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white md:hidden"
           onClick={() => setMenuOpen((open) => !open)}
           aria-label="Toggle navigation"
           aria-expanded={menuOpen}
@@ -78,7 +79,7 @@ export default function SiteNav() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-navy/10 bg-white px-6 py-3 md:hidden"
+            className="border-t border-navy/20 bg-navy/95 px-6 py-3 md:hidden"
           >
             {navItems.map((item) => {
               const isActive = isLinkActive(pathname, item.href);
@@ -87,7 +88,7 @@ export default function SiteNav() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block rounded-2xl px-4 py-3 text-sm font-medium transition ${isActive ? 'bg-gold/10 text-gold' : 'text-navy/80 hover:bg-navy/5 hover:text-navy'}`}
+                  className={`block rounded-2xl px-4 py-3 text-sm font-medium transition ${isActive ? 'bg-gold/15 text-gold' : 'text-white/75 hover:bg-white/10 hover:text-white'}`}
                 >
                   {item.label}
                 </Link>

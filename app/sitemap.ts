@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/contact',
-    '/empower-40k',
+    '/empower-50k',
     '/impact',
     '/partners',
     '/programs',
