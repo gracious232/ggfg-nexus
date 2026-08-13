@@ -115,7 +115,7 @@ export default function AboutPage() {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.08 }} className="overflow-hidden rounded-[2rem] border border-navy/10 bg-navy/10 shadow-soft">
             <div className="relative h-48 overflow-hidden md:h-[18rem] lg:h-[20rem] bg-slate-50">
-              <Image src="/about-03.webp" alt="Team working together" fill className="object-contain object-center" />
+              <Image src="/about-03.webp" alt="" fill className="object-contain object-center" />
             </div>
           </motion.div>
 
