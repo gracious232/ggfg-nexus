@@ -6,12 +6,12 @@ import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-navy/5 text-navy">
-      <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(2,15,26,0.08),_rgba(3,20,33,0.98))] text-white">
+      <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(2,15,26,0.08),_rgba(3,20,33,0.98))] text-navy">
         <div className="mx-auto max-w-6xl px-6 py-18 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Contact</p>
             <h1 className="mt-4 text-4xl font-semibold leading-tight text-gold sm:text-5xl">Let’s build the next generation of founders together.</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">For partnerships, support, and strategic engagement, we welcome conversations with institutions and leaders who share our long-term vision.</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-navy/80">For partnerships, support, and strategic engagement, we welcome conversations with institutions and leaders who share our long-term vision.</p>
           </motion.div>
         </div>
       </section>
