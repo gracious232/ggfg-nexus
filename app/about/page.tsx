@@ -112,35 +112,14 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.08 }} className="overflow-hidden rounded-[2rem] border border-navy/10 bg-navy/10 shadow-soft">
-            <div className="relative h-48 overflow-hidden md:h-[18rem] lg:h-[20rem] bg-slate-50">
-              <Image src="/about-03.webp" alt="" fill className="object-contain object-center" />
-            </div>
-          </motion.div>
-
-          <div className="grid gap-6">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.16 }} className="overflow-hidden rounded-[2rem] border border-navy/10 bg-navy/10 shadow-soft">
-              <div className="relative h-36 md:h-44 overflow-hidden bg-slate-50">
-                <Image src="/about-04.webp" alt="" fill className="object-contain object-center" />
-              </div>
-              <div className="p-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Regional impact</p>
-                <h3 className="mt-4 text-3xl font-semibold text-gold">A movement designed for sustained, measurable regional outcomes.</h3>
-                <p className="mt-4 text-base leading-7 text-navy/80">We strengthen people and institutions that create jobs, build resilience, and unlock community value.</p>
-              </div>
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.24 }} className="rounded-[2rem] border border-navy/10 bg-navy p-10 text-white shadow-soft">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What sets us apart</p>
-              <ul className="mt-6 space-y-4 text-sm leading-7 text-white/80">
-                <li>Systems-focused support with a regional development mindset.</li>
-                <li>Leadership formation that safeguards long-term growth.</li>
-                <li>Practical platforms and networks that accelerate capability, opportunity, and community strength.</li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.24 }} className="rounded-[2rem] border border-navy/10 bg-navy p-10 text-white shadow-soft">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What sets us apart</p>
+          <ul className="mt-6 space-y-4 text-sm leading-7 text-white/80">
+            <li>Systems-focused support with a regional development mindset.</li>
+            <li>Leadership formation that safeguards long-term growth.</li>
+            <li>Practical platforms and networks that accelerate capability, opportunity, and community strength.</li>
+          </ul>
+        </motion.div>
       </section>
     </main>
   );
