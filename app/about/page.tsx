@@ -7,17 +7,17 @@ import { Compass, Lightbulb, ShieldCheck } from 'lucide-react';
 const pillars = [
   {
     title: 'Mission',
-    text: 'Developing the next generation of leaders, innovators, and job creators by equipping young people with the skills, mindset, and opportunities to turn their potential into impact.',
+    text: 'To develop the next generation of leaders, innovators, and job creators by equipping young people with the skills, mindset, and opportunities to turn their potential into meaningful impact.',
     icon: ShieldCheck,
   },
   {
     title: 'Vision',
-    text: 'To see a generation of young people equipped and empowered to build the future, create opportunity, and transform the world around them.',
+    text: 'To see a generation of young people equipped, empowered, and ready to build the future, create opportunity, and transform their communities and the world around them.',
     icon: Compass,
   },
   {
     title: 'Leadership Philosophy',
-    text: 'We develop leaders who act with discipline, courage, and generational stewardship.',
+    text: 'We develop leaders who act with discipline, courage, integrity, and long-term responsibility for the people and systems they serve.',
     icon: Lightbulb,
   },
 ];
@@ -39,23 +39,23 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-navy/5 text-navy">
-      <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(201,162,39,0.14),_rgba(255,255,255,1))]">
+    <main className="min-h-screen bg-navy text-white">
+      <section className="border-b border-white/10 bg-[linear-gradient(135deg,_rgba(210,175,46,0.12),_rgba(2,15,26,1))]">
         <div className="mx-auto max-w-6xl px-6 py-18 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">About GGFG</p>
             <div className="mt-10 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div className="space-y-6">
                 <h1 className="text-4xl font-semibold leading-tight text-gold sm:text-5xl">A global movement designing platforms, pathways, and systems that strengthen people, communities, and long-term regional resilience.</h1>
-                <p className="max-w-3xl text-lg leading-8 text-navy/80">We build capability, leadership, and opportunity systems that empower individuals and institutions across West Africa and beyond.</p>
+                <p className="max-w-3xl text-lg leading-8 text-white/80">We build capability, leadership, and opportunity systems that empower individuals and institutions across West Africa and beyond.</p>
               </div>
-              <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-navy/5 shadow-soft">
-                  <div className="relative h-48 overflow-hidden md:h-[20rem] lg:h-[22rem] bg-slate-50">
-                    <Image src="/about-02.jpg" alt="Entrepreneur team collaboration" fill className="object-contain object-center" />
-                  </div>
-                <div className="border-t border-navy/10 bg-navy p-8 text-white">
+              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-soft">
+                <div className="relative h-48 overflow-hidden md:h-[20rem] lg:h-[22rem] bg-slate-50">
+                  <Image src="/about-02.jpg" alt="Entrepreneur team collaboration" fill className="object-contain object-center" />
+                </div>
+                <div className="border-t border-white/10 bg-navy p-8 text-white">
                   <p className="text-xs font-semibold uppercase tracking-[0.35em] text-gold">Focused support</p>
-                  <h2 className="mt-4 text-2xl font-semibold">We help people and communities grow with structured, high-touch support.</h2>
+                  <h2 className="mt-4 text-2xl font-semibold text-gold">We help people and communities grow with structured, high-touch support.</h2>
                   <p className="mt-4 text-sm leading-7 text-white/75">From capability development and leadership formation to ecosystem building and opportunity access, GGFG creates the systems that enable long-term flourishing.</p>
                 </div>
               </div>
@@ -64,45 +64,52 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-3">
-          {pillars.map((pillar, index) => {
-            const Icon = pillar.icon;
-            return (
-              <motion.div key={pillar.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.08 }} className="rounded-[2rem] border border-navy/10 bg-navy/10 p-8 shadow-sm">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
-                  <Icon size={20} />
-                </div>
-                <h2 className="text-2xl font-semibold text-gold">{pillar.title}</h2>
-                <p className="mt-4 text-base leading-8 text-navy/80">{pillar.text}</p>
-              </motion.div>
-            );
-          })}
+      <section className="bg-navy py-16 text-white">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mb-10 text-center lg:text-left">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Mission & Vision</p>
+            <h2 className="mt-4 text-3xl font-semibold text-gold sm:text-4xl">Our purpose is clear, deliberate, and built for long-term impact.</h2>
+          </div>
+          <div className="grid gap-8 lg:grid-cols-3">
+            {pillars.map((pillar, index) => {
+              const Icon = pillar.icon;
+              return (
+                <motion.div key={pillar.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.08 }} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-soft">
+                  <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
+                    <Icon size={20} />
+                  </div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-gold">{pillar.title}</p>
+                  <h3 className="mt-4 text-3xl font-bold leading-tight text-gold">{pillar.title}</h3>
+                  <p className="mt-5 text-base leading-8 text-white/80">{pillar.text}</p>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.08 }} className="overflow-hidden rounded-[2rem] border border-navy/10 bg-navy/10 shadow-soft">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.08 }} className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-soft">
             <div className="relative h-48 overflow-hidden md:h-[20rem] lg:h-[22rem] bg-slate-50">
               <Image src="/about-01.jpg" alt="Founder coaching session" fill className="object-contain object-center" />
             </div>
             <div className="p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Mission in action</p>
               <h3 className="mt-4 text-3xl font-semibold text-gold">Strengthening people, communities, and systems through intentional coaching, collaboration, and ecosystem-building.</h3>
-              <p className="mt-5 text-base leading-8 text-navy/80">This image represents the capability development, leadership formation, and systems support that power our work.</p>
+              <p className="mt-5 text-base leading-8 text-white/80">This image represents the capability development, leadership formation, and systems support that power our work.</p>
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.16 }} className="rounded-[2rem] border border-navy/10 bg-navy p-10 text-white shadow-soft">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.16 }} className="rounded-[2rem] border border-white/10 bg-navy p-10 text-white shadow-soft">
             <div className="inline-flex items-center gap-3 rounded-full bg-gold/10 px-4 py-2 text-xs uppercase tracking-[0.35em] text-gold">Approach</div>
-            <h3 className="mt-6 text-3xl font-semibold text-white sm:text-4xl">We design pathways that balance growth, governance, and community momentum.</h3>
+            <h3 className="mt-6 text-3xl font-semibold text-gold sm:text-4xl">We design pathways that balance growth, governance, and community momentum.</h3>
             <p className="mt-5 text-base leading-8 text-white/75">GGFG bridges human development with systems-strengthening so individuals and institutions can grow responsibly while generating wider regional impact.</p>
             <div className="mt-8 space-y-4">
               {values.map((value, index) => (
-                <div key={value.title} className="rounded-[1.75rem] border border-white/10 bg-navy/10 p-5">
+                <div key={value.title} className="rounded-[1.75rem] border border-white/10 bg-white/5 p-5">
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
-                  <h4 className="mt-3 text-xl font-semibold text-white">{value.title}</h4>
+                  <h4 className="mt-3 text-xl font-semibold text-gold">{value.title}</h4>
                   <p className="mt-2 text-sm leading-7 text-white/75">{value.text}</p>
                 </div>
               ))}
@@ -112,7 +119,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.24 }} className="rounded-[2rem] border border-navy/10 bg-navy p-10 text-white shadow-soft">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.24 }} className="rounded-[2rem] border border-white/10 bg-navy p-10 text-white shadow-soft">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What sets us apart</p>
           <ul className="mt-6 space-y-4 text-sm leading-7 text-white/80">
             <li>Systems-focused support with a regional development mindset.</li>
