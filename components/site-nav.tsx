@@ -15,10 +15,11 @@ const navItems = [
   { href: '/impact', label: 'Impact' },
   { href: '/contact', label: 'Contact' },
   { href: '/empower-lab', label: 'Empower Lab' },
+  { href: '/empower-lab/assessment', label: 'Assessment' },
 ];
 
 function isLinkActive(pathname: string, href: string) {
-  if (href === '/empower-lab') {
+  if (href === '/empower-lab' || href === '/empower-lab/assessment') {
     return pathname === href || pathname.startsWith('/empower-lab/');
   }
 

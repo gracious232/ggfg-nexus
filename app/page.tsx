@@ -108,6 +108,9 @@ export default function HomePage() {
                 <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-white transition hover:bg-gold/90">
                   Explore Empower Lab <ArrowRight size={16} />
                 </Link>
+                <Link href="/empower-lab/assessment" className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40">
+                  Take the Empower Lab Assessment <ArrowRight size={16} />
+                </Link>
               </div>
             </div>
             <div className="rounded-[2rem] border border-navy/10 bg-navy/15 p-6">

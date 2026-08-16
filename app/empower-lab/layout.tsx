@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const sectionLinks = [
   { href: '/empower-lab', label: 'Home', icon: Home },
   { href: '/empower-lab/module-1', label: 'Modules', icon: BookOpen },
+  { href: '/empower-lab/assessment', label: 'Assessment', icon: Sparkles },
 ];
 
 export default function EmpowerLabLayout({ children }: { children: React.ReactNode }) {

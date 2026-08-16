@@ -20,14 +20,12 @@ export default function EmpowerLabHomePage() {
               <Link href="/empower-lab/module-1" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy/90">
                 Begin Module 1 <ArrowRight size={16} />
               </Link>
-              <a
-                href="https://claude.ai/public/artifacts/fb4306b1-c092-4754-bfea-9b967e8256a1"
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                href="/empower-lab/assessment"
                 className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition hover:bg-gold/90"
               >
                 Take the Empower Lab Assessment <ArrowRight size={16} />
-              </a>
+              </Link>
               <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40">
                 Browse All Modules
               </Link>
