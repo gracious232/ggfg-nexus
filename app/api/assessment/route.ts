@@ -52,6 +52,10 @@ export async function POST(request: Request) {
     );
 
     if (existingAttempt) {
+      const matchingCertificate = store.certificates.find(
+        (certificate: any) => String(certificate.learner?.email || '').toLowerCase() === learnerEmail.toLowerCase(),
+      );
+
       return NextResponse.json(
         {
           success: true,
@@ -65,7 +69,8 @@ export async function POST(request: Request) {
             status: 'PASSED',
           },
           certificate: {
-            certificateId: existingAttempt.certificateId || existingAttempt.certId || null,
+            certificateId: existingAttempt.certificateId || existingAttempt.certId || matchingCertificate?.certificateId || null,
+            certificateFileLocation: matchingCertificate?.certificateFileLocation || null,
           },
         },
         { status: 200 },
@@ -101,6 +106,7 @@ export async function POST(request: Request) {
       status: result.status,
       attemptNumber,
       submittedAt: new Date().toISOString(),
+      certificateId: null as string | null,
     };
 
     store.attempts.push(attemptRecord);
@@ -121,6 +127,7 @@ export async function POST(request: Request) {
         issuedAt: new Date().toISOString(),
       };
 
+      attemptRecord.certificateId = certificateId;
       store.certificates.push(certificateRecord);
     }
 

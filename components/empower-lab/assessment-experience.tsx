@@ -126,6 +126,7 @@ export default function AssessmentExperience() {
           certificateId: matchingCertificate || null,
         });
         setCertificateId(matchingCertificate || '');
+        setCertificateUrl(data?.certificate?.certificateFileLocation || null);
         setStep('results');
         return;
       }
