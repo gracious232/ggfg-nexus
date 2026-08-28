@@ -26,12 +26,12 @@ export default function PartnersPage() {
 
       <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="rounded-[2rem] border border-navy/10 bg-navy/5 p-8">
+          <div className="card-hover rounded-[2rem] border border-navy/10 bg-navy/5 p-8">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Handshake size={20} /></div>
             <h2 className="mt-6 text-3xl font-semibold text-gold">We collaborate with institutions that see entrepreneurship as a strategic lever for transformation.</h2>
             <p className="mt-5 text-base leading-8 text-navy/80">GGFG creates a platform where public, private, academic, and philanthropic organizations can contribute to a more capable founder ecosystem.</p>
           </div>
-          <div className="rounded-[2rem] border border-navy/10 bg-navy/5 p-8 shadow-sm">
+          <div className="card-hover rounded-[2rem] border border-navy/10 bg-navy/5 p-8 shadow-sm">
             <div className="flex gap-3">
               <Briefcase size={20} className="text-gold" />
               <h3 className="text-xl font-semibold text-gold">Partner categories</h3>
@@ -52,7 +52,7 @@ export default function PartnersPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Become a partner</p>
               <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Join a movement committed to developing the next generation of entrepreneurs across West Africa.</h2>
             </div>
-            <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-gold/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-gold/20">
+            <Link href="/contact" className="btn-gold">
               Get involved <ArrowRight size={16} />
             </Link>
           </div>

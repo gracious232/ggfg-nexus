@@ -164,11 +164,11 @@ export default function EmpowerPage() {
               href="https://claude.ai/public/artifacts/fb4306b1-c092-4754-bfea-9b967e8256a1"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+              className="btn-navy"
             >
               View Empower Lab Assessment <ArrowRight size={16} />
             </a>
-            <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full border border-gold bg-gold px-6 py-3 text-sm font-semibold text-white transition hover:bg-gold/90">
+            <Link href="/contact" className="btn-gold">
               Become a partner <ArrowRight size={16} />
             </Link>
           </div>

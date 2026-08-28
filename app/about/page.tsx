@@ -74,7 +74,7 @@ export default function AboutPage() {
             {pillars.map((pillar, index) => {
               const Icon = pillar.icon;
               return (
-                <motion.div key={pillar.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.08 }} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-soft">
+                <motion.div key={pillar.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.08 }} className="card-hover rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-soft">
                   <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
                     <Icon size={20} />
                   </div>

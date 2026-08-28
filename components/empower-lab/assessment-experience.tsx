@@ -155,31 +155,63 @@ export default function AssessmentExperience() {
       return;
     }
 
-    const templateUrl = '/GGFG Empower Lab Certificate template.png';
-    const templateImage = new window.Image();
-
-    await new Promise<void>((resolve, reject) => {
-      templateImage.onload = () => resolve();
-      templateImage.onerror = () => reject(new Error('Unable to load certificate template.'));
-      templateImage.src = templateUrl;
-    });
-
-    const pageWidth = 1600;
-    const pageHeight = 1100;
+    const pageWidth = 1120;
+    const pageHeight = 790;
     const doc = new jsPDF({ orientation: 'landscape', unit: 'pt', format: [pageWidth, pageHeight] });
 
-    doc.addImage(templateImage, 'PNG', 0, 0, pageWidth, pageHeight);
+    doc.setFillColor(253, 252, 248);
+    doc.rect(0, 0, pageWidth, pageHeight, 'F');
+    doc.setDrawColor(3, 20, 33);
+    doc.setLineWidth(10);
+    doc.rect(8, 8, pageWidth - 16, pageHeight - 16, 'S');
+    doc.setDrawColor(210, 175, 46);
+    doc.setLineWidth(1);
+    doc.rect(32, 32, pageWidth - 64, pageHeight - 64, 'S');
 
     doc.setTextColor(3, 20, 33);
-    doc.setFont('times', 'italic');
-    doc.setFontSize(30);
-    doc.text(learnerName, 800, 540, { align: 'center' });
-
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(12);
-    doc.text('COMPLETION DATE', 170, 830);
+    doc.setFontSize(14);
+    doc.text('GGFG NEXUS', pageWidth / 2, 96, { align: 'center', charSpace: 3 });
+    doc.setDrawColor(210, 175, 46);
+    doc.line(pageWidth / 2 - 42, 118, pageWidth / 2 + 42, 118);
+    doc.setTextColor(210, 175, 46);
+    doc.setFontSize(11);
+    doc.text('CERTIFICATE OF ACHIEVEMENT', pageWidth / 2, 150, { align: 'center', charSpace: 2 });
+    doc.setTextColor(3, 20, 33);
+    doc.setFont('times', 'bold');
+    doc.setFontSize(38);
+    doc.text('Empower Lab', pageWidth / 2, 200, { align: 'center' });
     doc.setFont('helvetica', 'normal');
-    doc.text(formatDate(new Date()), 170, 858);
+    doc.setFontSize(11);
+    doc.text('MODULES 1-5 ASSESSMENT', pageWidth / 2, 225, { align: 'center', charSpace: 2 });
+    doc.setTextColor(85, 96, 105);
+    doc.text('THIS CERTIFIES THAT', pageWidth / 2, 290, { align: 'center', charSpace: 2 });
+    doc.setTextColor(3, 20, 33);
+    doc.setFont('times', 'italic');
+    doc.setFontSize(36);
+    doc.text(learnerName, pageWidth / 2, 345, { align: 'center', maxWidth: 820 });
+    doc.setDrawColor(210, 175, 46);
+    doc.line(pageWidth / 2 - 260, 366, pageWidth / 2 + 260, 366);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(85, 96, 105);
+    doc.setFontSize(13);
+    doc.text('has successfully completed the Empower Lab assessment and demonstrated the commitment', pageWidth / 2, 420, { align: 'center' });
+    doc.text('to learn, think, build, and grow as an entrepreneurial leader.', pageWidth / 2, 442, { align: 'center' });
+    doc.setDrawColor(3, 20, 33);
+    doc.setLineWidth(0.5);
+    doc.line(180, 545, pageWidth - 180, 545);
+    doc.setTextColor(210, 175, 46);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(9);
+    doc.text('COMPLETION DATE', 270, 580, { align: 'center', charSpace: 1.5 });
+    doc.text('CERTIFICATE ID', pageWidth / 2, 580, { align: 'center', charSpace: 1.5 });
+    doc.text('VERIFICATION', 850, 580, { align: 'center', charSpace: 1.5 });
+    doc.setTextColor(3, 20, 33);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(11);
+    doc.text(formatDate(new Date()), 270, 604, { align: 'center' });
+    doc.text(certificateId || 'Pending', pageWidth / 2, 604, { align: 'center' });
+    doc.text('GGFG NEXUS', 850, 604, { align: 'center' });
 
     doc.save(`empower-lab-certificate-${certificateId || 'download'}.pdf`);
   };

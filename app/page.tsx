@@ -54,10 +54,10 @@ export default function HomePage() {
                 GGFG is a global movement designing the platforms and systems that unlock human potential. Through capability development, leadership formation, community ecosystem building, and long-term opportunity systems, we empower people to transform their lives and shape the future.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/empower-50k" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-navy/90">
+                <Link href="/empower-50k" className="btn-navy">
                   Explore Empower 50K <ArrowRight size={16} />
                 </Link>
-                <Link href="/about" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40">
+                <Link href="/about" className="btn-outline-light">
                   Discover our approach
                 </Link>
               </div>
@@ -105,11 +105,8 @@ export default function HomePage() {
               <h3 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">Empower Lab brings practical learning, assessments, and certificates into one clear experience.</h3>
               <p className="mt-4 text-lg leading-8 text-navy/90">Visitors can now explore the learning modules, take the assessment, and view the certificate journey directly from GGFG’s public site.</p>
               <div className="mt-6 flex flex-wrap gap-4">
-                <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-white transition hover:bg-gold/90">
+                <Link href="/empower-lab" className="btn-gold">
                   Explore Empower Lab <ArrowRight size={16} />
-                </Link>
-                <Link href="/empower-lab/assessment" className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40">
-                  Take the Empower Lab Assessment <ArrowRight size={16} />
                 </Link>
               </div>
             </div>

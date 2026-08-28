@@ -17,16 +17,18 @@ export default function EmpowerLabHomePage() {
               This learning journey is designed to be calm, clear, and structured. Each module is short enough to read with focus, practical enough to apply, and connected to the next step of growth.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/empower-lab/module-1" className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy/90">
+              <Link href="/empower-lab/module-1" className="btn-navy">
                 Begin Module 1 <ArrowRight size={16} />
               </Link>
-              <Link
-                href="/empower-lab/assessment"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition hover:bg-gold/90"
+              <a
+                href="https://claude.ai/public/artifacts/fb4306b1-c092-4754-bfea-9b967e8256a1"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-gold"
               >
                 Take the Empower Lab Assessment <ArrowRight size={16} />
-              </Link>
-              <Link href="/empower-lab" className="inline-flex items-center gap-2 rounded-full border border-navy/15 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy/40">
+              </a>
+              <Link href="/empower-lab" className="btn-outline-dark">
                 Browse All Modules
               </Link>
             </div>

@@ -29,7 +29,7 @@ export default function ImpactPage() {
           {outcomes.map((outcome, index) => {
             const Icon = outcome.icon;
             return (
-              <motion.div key={outcome.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.05 }} className="rounded-[1.75rem] border border-navy/10 bg-navy/10 p-8 shadow-sm">
+              <motion.div key={outcome.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.05 }} className="card-hover rounded-[1.75rem] border border-navy/10 bg-navy/10 p-8 shadow-sm">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Icon size={20} /></div>
                 <h3 className="mt-6 text-2xl font-semibold text-gold">{outcome.title}</h3>
                 <p className="mt-4 text-base leading-8 text-navy/80">{outcome.body}</p>
@@ -46,7 +46,7 @@ export default function ImpactPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Long-term vision</p>
               <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Our impact will compound over decades through founders, families, communities, and institutions.</h2>
             </div>
-            <Link href="/partners" className="inline-flex items-center gap-2 rounded-full bg-gold/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-gold/20">
+            <Link href="/partners" className="btn-gold">
               View partners <ArrowRight size={16} />
             </Link>
           </div>

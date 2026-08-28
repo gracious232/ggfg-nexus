@@ -11,9 +11,12 @@ html {
 }
 
 body {
-  @apply text-navy antialiased;
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-navy antialiased font-sans;
   background: radial-gradient(circle at top, rgba(210, 175, 46, 0.12), transparent 18%), linear-gradient(180deg, #020F1A 0%, #061A2D 18%, #F7F7F5 100%);
+}
+
+h1, h2, h3 {
+  @apply font-display;
 }
 
 body::before {
@@ -32,5 +35,26 @@ body::before {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent;
+  }
+  .btn-navy {
+    @apply btn bg-navy text-white shadow-soft hover:-translate-y-0.5 hover:bg-navy/90 hover:shadow-lg active:translate-y-0;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-white shadow-soft hover:-translate-y-0.5 hover:bg-gold/90 hover:shadow-lg active:translate-y-0;
+  }
+  .btn-outline-light {
+    @apply btn border border-white/20 text-white hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/5;
+  }
+  .btn-outline-dark {
+    @apply btn border border-navy/15 text-navy hover:-translate-y-0.5 hover:border-navy/40 hover:bg-navy/5;
+  }
+  .card-hover {
+    @apply transition duration-300 ease-out hover:-translate-y-1 hover:shadow-soft;
   }
 }

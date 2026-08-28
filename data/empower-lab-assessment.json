@@ -14,6 +14,21 @@
       "name": "Faith",
       "email": "gggbla@gmail.com",
       "createdAt": "2026-08-16T05:16:12.810Z"
+    },
+    {
+      "name": "Submission Check",
+      "email": "submission-check-20260819@example.com",
+      "createdAt": "2026-08-19T20:07:10.346Z"
+    },
+    {
+      "name": "Port 3000 Check",
+      "email": "port-3000-check-20260819@example.com",
+      "createdAt": "2026-08-19T20:09:01.775Z"
+    },
+    {
+      "name": "Browser Submission Test",
+      "email": "browser-submission-20260819@example.com",
+      "createdAt": "2026-08-19T20:10:27.872Z"
     }
   ],
   "attempts": [
@@ -52,6 +67,45 @@
       "status": "PASSED",
       "attemptNumber": 1,
       "submittedAt": "2026-08-16T05:16:12.814Z"
+    },
+    {
+      "id": "attempt-1787170030348-1",
+      "learner": {
+        "name": "Submission Check",
+        "email": "submission-check-20260819@example.com"
+      },
+      "score": 20,
+      "percentage": 100,
+      "status": "PASSED",
+      "attemptNumber": 1,
+      "submittedAt": "2026-08-19T20:07:10.348Z",
+      "certificateId": "EL-2026-525529"
+    },
+    {
+      "id": "attempt-1787170141775-1",
+      "learner": {
+        "name": "Port 3000 Check",
+        "email": "port-3000-check-20260819@example.com"
+      },
+      "score": 20,
+      "percentage": 100,
+      "status": "PASSED",
+      "attemptNumber": 1,
+      "submittedAt": "2026-08-19T20:09:01.775Z",
+      "certificateId": "EL-2026-279131"
+    },
+    {
+      "id": "attempt-1787170227872-1",
+      "learner": {
+        "name": "Browser Submission Test",
+        "email": "browser-submission-20260819@example.com"
+      },
+      "score": 20,
+      "percentage": 100,
+      "status": "PASSED",
+      "attemptNumber": 1,
+      "submittedAt": "2026-08-19T20:10:27.872Z",
+      "certificateId": "EL-2026-150220"
     }
   ],
   "certificates": [
@@ -90,6 +144,42 @@
       "verificationStatus": "valid",
       "certificateFileLocation": "/empower-lab/certificate/EL-2026-732905",
       "issuedAt": "2026-08-16T05:16:12.814Z"
+    },
+    {
+      "certificateId": "EL-2026-525529",
+      "learner": {
+        "name": "Submission Check",
+        "email": "submission-check-20260819@example.com"
+      },
+      "program": "Empower Lab Modules 1–5 Assessment",
+      "completionDate": "2026-08-19T20:07:10.348Z",
+      "verificationStatus": "valid",
+      "certificateFileLocation": "/empower-lab/certificate/EL-2026-525529",
+      "issuedAt": "2026-08-19T20:07:10.348Z"
+    },
+    {
+      "certificateId": "EL-2026-279131",
+      "learner": {
+        "name": "Port 3000 Check",
+        "email": "port-3000-check-20260819@example.com"
+      },
+      "program": "Empower Lab Modules 1–5 Assessment",
+      "completionDate": "2026-08-19T20:09:01.776Z",
+      "verificationStatus": "valid",
+      "certificateFileLocation": "/empower-lab/certificate/EL-2026-279131",
+      "issuedAt": "2026-08-19T20:09:01.776Z"
+    },
+    {
+      "certificateId": "EL-2026-150220",
+      "learner": {
+        "name": "Browser Submission Test",
+        "email": "browser-submission-20260819@example.com"
+      },
+      "program": "Empower Lab Modules 1–5 Assessment",
+      "completionDate": "2026-08-19T20:10:27.873Z",
+      "verificationStatus": "valid",
+      "certificateFileLocation": "/empower-lab/certificate/EL-2026-150220",
+      "issuedAt": "2026-08-19T20:10:27.873Z"
     }
   ]
 }
