@@ -28,6 +28,11 @@ body::before {
   z-index: 0;
 }
 
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
 ::selection {
   @apply bg-gold/50 text-navy;
 }
