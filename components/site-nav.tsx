@@ -18,6 +18,8 @@ const navItems = [
   { href: '/empower-lab/assessment', label: 'Assessment' },
 ];
 
+const giftUrl = 'https://www.paypal.com/us/fundraiser/charity/5746671';
+
 function isLinkActive(pathname: string, href: string) {
   if (href === '/empower-lab' || href === '/empower-lab/assessment') {
     return pathname === href || pathname.startsWith('/empower-lab/');
@@ -60,6 +62,9 @@ export default function SiteNav() {
               </Link>
             );
           })}
+          <a href={giftUrl} target="_blank" rel="noreferrer" className="btn-gold px-4 py-2 text-xs">
+            MAKE A GIFT
+          </a>
         </div>
 
         <button
@@ -95,6 +100,15 @@ export default function SiteNav() {
                 </Link>
               );
             })}
+            <a
+              href={giftUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="btn-gold mt-3 w-full text-center text-xs"
+            >
+              MAKE A GIFT
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
