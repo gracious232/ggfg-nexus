@@ -112,6 +112,15 @@ export default function SiteNav() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <a
+        href={giftUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-5 right-5 z-40 btn-gold px-5 py-3 text-xs shadow-lg sm:bottom-6 sm:right-6"
+      >
+        MAKE A GIFT
+      </a>
     </header>
   );
 }
