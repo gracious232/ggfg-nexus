@@ -10,7 +10,6 @@ import { Menu, X } from 'lucide-react';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/our-story', label: 'Our Story' },
   { href: '/empower-50k', label: 'Empower 50K' },
   { href: '/programs', label: 'Programs' },
   { href: '/impact', label: 'Impact' },
@@ -38,7 +37,8 @@ export default function SiteNav() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-midnight/20 bg-midnight/95 text-white backdrop-blur">
+    <>
+      <header className="sticky top-0 z-50 border-b border-midnight/20 bg-midnight/95 text-white backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-navy/10 bg-white">
@@ -114,14 +114,16 @@ export default function SiteNav() {
         )}
       </AnimatePresence>
 
+      </header>
+
       <a
         href={giftUrl}
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-5 right-5 z-40 btn-gold px-5 py-3 text-xs shadow-lg sm:bottom-6 sm:right-6"
+        className="fixed bottom-5 right-5 z-30 btn-gold px-5 py-3 text-xs shadow-lg sm:bottom-6 sm:right-6"
       >
         MAKE A GIFT
       </a>
-    </header>
+    </>
   );
 }
